@@ -20,7 +20,7 @@ namespace CryptoNote
 {
     namespace parameters
     {
-        const uint64_t DIFFICULTY_TARGET = 30; // seconds
+        const uint64_t DIFFICULTY_TARGET = 150; // seconds
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER = 500000000;
 
@@ -28,7 +28,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3914525;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x599fe2a4a;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
@@ -43,9 +43,9 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3 = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(100000000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(50000000);
 
-        const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 187000;
+        const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 80;
 
         const size_t ZAWY_DIFFICULTY_V2 = 0;
 
@@ -57,7 +57,7 @@ namespace CryptoNote
 
         const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3 = 800000;
 
-        const unsigned EMISSION_SPEED_FACTOR = 25;
+        const unsigned EMISSION_SPEED_FACTOR = 15;
 
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -86,10 +86,10 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE = 600;
 
-        const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 2;
+        const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 5;
 
         /* TODO: Remove? */
-        const uint64_t MINIMUM_FEE = UINT64_C(10);
+        const uint64_t MINIMUM_FEE = UINT64_C(165);
 
         /* Fee per byte is rounded up in chunks. This helps makes estimates
          * more accurate. It's suggested to make this a power of two, to relate
@@ -109,20 +109,20 @@ namespace CryptoNote
         /* This section defines our minimum and maximum mixin counts required for transactions */
         const uint64_t MINIMUM_MIXIN_V1 = 0;
 
-        const uint64_t MAXIMUM_MIXIN_V1 = 100;
+        const uint64_t MAXIMUM_MIXIN_V1 = 30;
 
-        const uint64_t MINIMUM_MIXIN_V2 = 7;
+        const uint64_t MINIMUM_MIXIN_V2 = 3;
 
-        const uint64_t MAXIMUM_MIXIN_V2 = 7;
+        const uint64_t MAXIMUM_MIXIN_V2 = 2;
 
-        const uint64_t MINIMUM_MIXIN_V3 = 3;
+        const uint64_t MINIMUM_MIXIN_V3 = 5;
 
-        const uint64_t MAXIMUM_MIXIN_V3 = 3;
+        const uint64_t MAXIMUM_MIXIN_V3 = 5;
 
         /* The heights to activate the mixin limits at */
-        const uint32_t MIXIN_LIMITS_V1_HEIGHT = 440000;
+        const uint32_t MIXIN_LIMITS_V1_HEIGHT = 7521;
 
-        const uint32_t MIXIN_LIMITS_V2_HEIGHT = 620000;
+        const uint32_t MIXIN_LIMITS_V2_HEIGHT = 3141;
 
         const uint32_t MIXIN_LIMITS_V3_HEIGHT = 800000;
 
@@ -136,7 +136,7 @@ namespace CryptoNote
 
         const uint64_t DEFAULT_MIXIN_V3 = MAXIMUM_MIXIN_V3;
 
-        const uint64_t DEFAULT_DUST_THRESHOLD = UINT64_C(10);
+        const uint64_t DEFAULT_DUST_THRESHOLD = UINT64_C(0);
 
         const uint64_t DEFAULT_DUST_THRESHOLD_V2 = UINT64_C(0);
 
