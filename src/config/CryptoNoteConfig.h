@@ -257,36 +257,13 @@ namespace CryptoNote
         static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 
         /* Block heights we are going to have hard forks at */
-        const uint64_t FORK_HEIGHTS[] = {
-            187000, // 0
-            350000, // 1
-            440000, // 2
-            620000, // 3
-            700000, // 4
-            800000, // 5
-            1000000, // 6
-            1200000, // 7
-            1300000, // 8
-            1400000, // 9
-            1600000, // 10
-            1800000, // 11
-            2000000, // 12
-            2200000, // 13
-            2400000, // 14
-            2600000, // 15
-            2800000, // 16
-            3000000, // 17
-            3200000, // 18
-            3400000, // 19
-            3600000, // 20
-            3800000, // 21
-            4000000, // 22
-            4200000, // 23
-            4400000, // 24
-            4600000, // 25
-            4800000, // 26
-            5000000, // 27
-        };
+        const uint64_t FORK_HEIGHTS[] =
+{
+  4392,
+  8684,
+  13176,
+  17568
+};
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
         const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 17;
@@ -299,7 +276,7 @@ namespace CryptoNote
 
            This will default to zero if the FORK_HEIGHTS array is empty, so you don't
            need to change it manually. */
-        const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : SOFTWARE_SUPPORTED_FORK_INDEX;
+        const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : 0;
 
         /* Make sure CURRENT_FORK_INDEX is a valid index, unless FORK_HEIGHTS is empty */
         static_assert(
@@ -317,7 +294,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "TurtleCoin";
+    const char CRYPTONOTE_NAME[] = "MoharStable";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
