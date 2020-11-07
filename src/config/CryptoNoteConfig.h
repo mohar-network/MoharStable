@@ -385,11 +385,7 @@ namespace CryptoNote
         {0xb5, 0x0c, 0x4a, 0xcf, 0x6c, 0x57, 0x52, 0x41, 0x65, 0xf9, 0xb6, 0x91, 0xa4, 0xc1, 0x43, 0xe9}};
 
     const char *const SEED_NODES[] = {
-        "145.239.88.119:11897", // cision
-        "165.227.252.132:11897", // iburnmycd
-        "148.251.178.238:11897", // hv
-        "45.32.138.7:11897", // extra
-        "46.214.70.196:11897", // CuveeRO
-        "94.113.119.122:11897" // CuveeCZ
+        "192.168.0.9:11897",
+        "165.227.252.132:11897",
     };
 } // namespace CryptoNote
